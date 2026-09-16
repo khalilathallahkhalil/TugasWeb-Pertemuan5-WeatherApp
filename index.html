@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header-top">
+        <h1>Weather App</h1>
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Theme">🌙</button>
+      </div>
+      <p class="subtitle">Pantau Cuaca Real-Time</p>
+    </header>
+
+    <form id="search-form" class="search-box">
+      <input type="text" id="city-input" placeholder="Cari nama kota..." required>
+      <button type="submit">Cari</button>
+    </form>
+
+    <div class="controls">
+      <button id="unit-toggle-btn" class="toggle-btn">Ubah ke °F</button>
+    </div>
+
+    <div id="history-container" class="history-container"></div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Memuat data cuaca...</p>
+    </div>
+
+    <div id="error-message" class="error-box hidden"></div>
+
+    <div id="weather-card" class="weather-card">
+      <div class="card-header">
+        <h2 id="city-name">Memuat...</h2>
+        <span class="status-badge">Kota Terpilih</span>
+      </div>
+      <div class="weather-main">
+        <span id="weather-icon" class="weather-emoji">☀️</span>
+        <p id="temperature" class="temp">--°C</p>
+      </div>
+      <p id="weather-desc" class="desc">--</p>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span>Kelembaban</span>
+          <strong id="humidity">--%</strong>
+        </div>
+      </div>
+    </div>
+
+    <div id="forecast-section" class="forecast-section">
+      <h3>Prakiraan 5 Hari Ke Depan</h3>
+      <div id="forecast-cards" class="forecast-cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
