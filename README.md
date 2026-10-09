@@ -1,8 +1,8 @@
 # Cara Menjalankan
 
 - Clone repository ini.
-- Buka file `index.html` di browser.
-- Klik menu Pengaturan API Key, lalu tempel API key OpenWeatherMap.
+- Buka file `script.js` di vscode.
+- Cari baris Pengaturan API Key, lalu tempel API key OpenWeatherMap.
 - Simpan API key, kemudian cari nama kota yang diinginkan.
 
 ## Catatan
