@@ -1,4 +1,4 @@
-const API_KEY = 'd7fd736a86c5a16dd603c5d6ced81bbb';
+const API_KEY = 'Letak API disini';
 const DEFAULT_CITY = 'Jakarta';
 
 let currentUnit = 'metric';
